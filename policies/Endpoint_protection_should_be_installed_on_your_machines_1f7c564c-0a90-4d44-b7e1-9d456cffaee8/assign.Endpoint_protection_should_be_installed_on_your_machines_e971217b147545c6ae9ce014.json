@@ -1,0 +1,51 @@
+{
+ "sku": {
+  "name": "A0",
+  "tier": "Free"
+ },
+ "identity": {
+  "principalId": "c35b5cb6-53ac-4a96-95de-809af022a1d3",
+  "tenantId": "1eefffe2-b4f1-4c73-a75e-40f36f4e39be",
+  "type": "SystemAssigned"
+ },
+ "properties": {
+  "displayName": "Endpoint protection should be installed on your machines",
+  "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/1f7c564c-0a90-4d44-b7e1-9d456cffaee8",
+  "scope": "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource",
+  "notScopes": [
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.ClassicCompute/domainNames/knox",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/KNOX_RESOURCE/providers/Microsoft.Compute/disks/knoxwebwinvm_lun_1_2_c766a20c2b334deea5b7df80748884da",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/KNOX_RESOURCE/providers/Microsoft.Compute/disks/knoxwebwinvm_lun_2_3_c3ad42c60bf64f7ca6df03325efea9fa",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/KNOX_RESOURCE/providers/Microsoft.Compute/disks/knoxwebwinvm_OsDisk_1_055b357e825e4552a1f29a4241e63cb7",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.DomainRegistration/domains/netxknox.com",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/microsoft.insights/actiongroups/AD KNOX",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/microsoft.insights/activityLogAlerts/knox_rule",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.Network/dnszones/netxknox.com",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.Network/loadBalancers/load_balancer",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.Network/networkInterfaces/knoxwebwinvm285",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.Network/networkSecurityGroups/knoxwebwinvm-nsg",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.Network/publicIPAddresses/knoxwebwinvm-ip",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.Network/publicIPAddresses/load-ip",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.Network/trafficmanagerprofiles/knoxcloudservice",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.Network/virtualNetworks/knox_resource-vnet",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.OperationalInsights/workspaces/knox-network-studio",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.OperationsManagement/solutions/SecurityInsights(knox-network-studio)",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.RecoveryServices/vaults/vault656",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.Storage/storageAccounts/knoxstorage"
+  ],
+  "parameters": {},
+  "metadata": {
+   "assignedBy": "Shadbin Sabbir",
+   "parameterScopes": {},
+   "createdBy": "af5209f2-7825-4fcf-8111-f61dc693056b",
+   "createdOn": "2021-09-25T06:06:32.5072653Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "enforcementMode": "Default"
+ },
+ "id": "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.Authorization/policyAssignments/e971217b147545c6ae9ce014",
+ "type": "Microsoft.Authorization/policyAssignments",
+ "name": "e971217b147545c6ae9ce014",
+ "location": "southeastasia"
+}

@@ -1,0 +1,64 @@
+name: manage-azure-policy-95df5f4d
+on:
+  workflow_dispatch:
+    inputs:
+      remarks:
+        description: 'Reason for triggering the workflow run'
+        required: false
+        default: 'Updating Azure Policies'
+
+
+## Uncomment the following if you wish to automatically trigger workflow run with every commit
+#
+#  push:
+#    paths:
+#      - 'policies/Endpoint_protection_should_be_installed_on_your_machines_1f7c564c-0a90-4d44-b7e1-9d456cffaee8/**'
+#      - 'policies/Endpoint_protection_solution_should_be_installed_on_virtual_machine_scale_sets_26a828e1-e88f-464e-bbb3-c134a282b9de/**'
+#      - 'policies/Configure_BotService_resources_with_private_endpoints_29261f8e-efdb-4255-95b8-8215414515d6/**'
+#      - 'policies/Cloud_Services_(extended_support)_role_instances_should_have_an_endpoint_protection_solution_installed_1e378679-f122-4a96-a739-a7729c46e1aa/**'
+#      - 'policies/Configure_Azure_Web_PubSub_Service_with_private_endpoints_1b9c0b58-fc7b-42c8-8010-cdfa1d1b8544/**'
+#      - 'policies/Configure_Batch_accounts_with_private_endpoints_0ef5aac7-c064-427a-b87b-d47b3ddcaf73/**'
+#      - 'policies/Private_endpoint_should_be_enabled_for_IoT_Hub_0d40b058-9f95-4a19-93e3-9b0330baa2a3/**'
+#      - 'policies/Private_endpoint_connections_on_Automation_Accounts_should_be_enabled_0c2b3618-68a8-4034-a150-ff4abc873462/**'
+#      - 'policies/Private_endpoint_should_be_enabled_for_MariaDB_servers_0a1302fb-a631-4106-9753-f3d494733990/**'
+#      - 'policies/Private_endpoint_should_be_enabled_for_PostgreSQL_servers_0564d078-92f5-4f97-8398-b9f58a51f70b/**'
+#      - 'policies/Private_endpoint_connections_on_Batch_accounts_should_be_enabled_009a0c92-f5b4-4776-9b66-4ed2b4775563/**'
+#      - 'policies/App_Service_should_use_a_virtual_network_service_endpoint_2d21331d-a4c2-4def-a9ad-ee4e1e023beb/**'
+#      - 'policies/Deploy_-_Configure_Azure_Event_Grid_domains_with_private_endpoints_36f4658a-848a-467b-881c-e6fa20cf75fc/**'
+#      - 'policies/MySQL_server_should_use_a_virtual_network_service_endpoint_3375856c-3824-4e0e-ae6a-79e011dd4c47/**'
+#      - 'policies/Synapse_managed_private_endpoints_should_only_connect_to_resources_in_approved_Azure_Active_Directory_tenants_3a003702-13d2-4679-941b-937e58c443f0/**'
+#      - 'policies/Configure_Azure_Synapse_workspaces_with_private_endpoints_3b3b0c27-08d2-4b32-879d-19930bee3266/**'
+#      - 'policies/PostgreSQL_server_should_use_a_virtual_network_service_endpoint_3c14b034-bcb6-4905-94e7-5b8e98a47b65/**'
+#      - .github/workflows/manage-azure-policy-95df5f4d.yml
+jobs:
+  apply-azure-policy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Login to Azure
+      uses: azure/login@v1
+      with:
+        creds: ${{secrets.AZURE_CREDENTIALS_95df5f4d}}
+        allow-no-subscriptions: true
+    - name: Create or Update Azure Policies
+      uses: azure/manage-azure-policy@v0
+      with:
+        paths: |
+          policies/Endpoint_protection_should_be_installed_on_your_machines_1f7c564c-0a90-4d44-b7e1-9d456cffaee8/**
+          policies/Endpoint_protection_solution_should_be_installed_on_virtual_machine_scale_sets_26a828e1-e88f-464e-bbb3-c134a282b9de/**
+          policies/Configure_BotService_resources_with_private_endpoints_29261f8e-efdb-4255-95b8-8215414515d6/**
+          policies/Cloud_Services_(extended_support)_role_instances_should_have_an_endpoint_protection_solution_installed_1e378679-f122-4a96-a739-a7729c46e1aa/**
+          policies/Configure_Azure_Web_PubSub_Service_with_private_endpoints_1b9c0b58-fc7b-42c8-8010-cdfa1d1b8544/**
+          policies/Configure_Batch_accounts_with_private_endpoints_0ef5aac7-c064-427a-b87b-d47b3ddcaf73/**
+          policies/Private_endpoint_should_be_enabled_for_IoT_Hub_0d40b058-9f95-4a19-93e3-9b0330baa2a3/**
+          policies/Private_endpoint_connections_on_Automation_Accounts_should_be_enabled_0c2b3618-68a8-4034-a150-ff4abc873462/**
+          policies/Private_endpoint_should_be_enabled_for_MariaDB_servers_0a1302fb-a631-4106-9753-f3d494733990/**
+          policies/Private_endpoint_should_be_enabled_for_PostgreSQL_servers_0564d078-92f5-4f97-8398-b9f58a51f70b/**
+          policies/Private_endpoint_connections_on_Batch_accounts_should_be_enabled_009a0c92-f5b4-4776-9b66-4ed2b4775563/**
+          policies/App_Service_should_use_a_virtual_network_service_endpoint_2d21331d-a4c2-4def-a9ad-ee4e1e023beb/**
+          policies/Deploy_-_Configure_Azure_Event_Grid_domains_with_private_endpoints_36f4658a-848a-467b-881c-e6fa20cf75fc/**
+          policies/MySQL_server_should_use_a_virtual_network_service_endpoint_3375856c-3824-4e0e-ae6a-79e011dd4c47/**
+          policies/Synapse_managed_private_endpoints_should_only_connect_to_resources_in_approved_Azure_Active_Directory_tenants_3a003702-13d2-4679-941b-937e58c443f0/**
+          policies/Configure_Azure_Synapse_workspaces_with_private_endpoints_3b3b0c27-08d2-4b32-879d-19930bee3266/**
+          policies/PostgreSQL_server_should_use_a_virtual_network_service_endpoint_3c14b034-bcb6-4905-94e7-5b8e98a47b65/**
