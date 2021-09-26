@@ -1,0 +1,73 @@
+{
+ "sku": {
+  "name": "A0",
+  "tier": "Free"
+ },
+ "identity": {
+  "principalId": "72de8356-0950-4542-8722-2c593868d189",
+  "tenantId": "1eefffe2-b4f1-4c73-a75e-40f36f4e39be",
+  "type": "SystemAssigned"
+ },
+ "properties": {
+  "displayName": "Virtual machines should encrypt temp disks, caches, and data flows between Compute and Storage resources",
+  "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/0961003e-5a0a-4549-abde-af6a37f2724d",
+  "scope": "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource",
+  "notScopes": [
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.AAD/DomainServices/knoxwebx.com",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.Automation/automationAccounts/AzureAutomationAccount01",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.Automation/automationAccounts/AzureAutomationAccount01/runbooks/AzureAutomationTutorial",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.Automation/automationAccounts/AzureAutomationAccount01/runbooks/AzureAutomationTutorialPython2",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.Automation/automationAccounts/AzureAutomationAccount01/runbooks/AzureAutomationTutorialScript",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.Automation/automationAccounts/AzureAutomationAccount01/runbooks/knoxvms",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.Automation/automationAccounts/AzureAutomationAccount01/runbooks/start-stop-knox-vms2",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.Compute/disks/knox",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/KNOX_RESOURCE/providers/Microsoft.Compute/disks/simpleLinuxVM_OsDisk_1_7677ef0d25594e35866054f3ab1b7e1e",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.Compute/virtualMachines/simpleLinuxVM",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.Compute/virtualMachines/simpleLinuxVM/extensions/AzureNetworkWatcherExtension",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.Compute/virtualMachines/simpleLinuxVM/extensions/enablevmaccess",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/KNOX_RESOURCE/providers/Microsoft.Compute/virtualMachines/simpleLinuxVM/extensions/OmsAgentForLinux",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.Compute/virtualMachines/simpleLinuxVM/extensions/TeamServicesAgentExtension",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.DomainRegistration/domains/netxknox.com",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/microsoft.insights/actiongroups/AD KNOX",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/microsoft.insights/activityLogAlerts/knox_rule",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/microsoft.insights/privateLinkScopes/knoxmonitor",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.Network/ddosProtectionPlans/knoxwebx.com",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.Network/dnszones/netxknox.com",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.Network/loadBalancers/aadds-f353dfd5e7cf4c16b3138b9a625b1079-lb",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.Network/networkInterfaces/aadds-4a043b22347c486f98cfa418997ec575-nic",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.Network/networkInterfaces/aadds-b54916ee9a74440e8909b76aaffc5453-nic",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.Network/networkInterfaces/Knoxstudio.nic.8483e9ee-e67a-4062-bae5-a52b11d874e6",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.Network/networkInterfaces/privateendpoint.nic.094cbc29-730f-4e47-8bb9-04edc298e1c1",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.Network/networkInterfaces/simpleLinuxVMNetInt",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.Network/networkSecurityGroups/aadds-nsg",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.Network/networkSecurityGroups/SecGroupNet",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.Network/privateDnsZones/privatelink.azure-automation.net",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.Network/privateDnsZones/privatelink.azure-automation.net/virtualNetworkLinks/glkzgrxonmsbi",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.Network/privateEndpoints/Knoxstudio",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.Network/privateEndpoints/privateendpoint",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.Network/publicIPAddresses/aadds-f353dfd5e7cf4c16b3138b9a625b1079-pip",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.Network/publicIPAddresses/simpleLinuxVMPublicIP",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.Network/virtualNetworks/knoxvn",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.Network/virtualNetworks/vNet",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.RecoveryServices/vaults/vault656"
+  ],
+  "parameters": {
+   "effect": {
+    "value": "AuditIfNotExists"
+   }
+  },
+  "metadata": {
+   "assignedBy": "Shadbin Sabbir",
+   "parameterScopes": {},
+   "createdBy": "af5209f2-7825-4fcf-8111-f61dc693056b",
+   "createdOn": "2021-09-07T16:03:55.6867853Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "enforcementMode": "Default"
+ },
+ "id": "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/knox_resource/providers/Microsoft.Authorization/policyAssignments/c8b8b16076734b8599ef2948",
+ "type": "Microsoft.Authorization/policyAssignments",
+ "name": "c8b8b16076734b8599ef2948",
+ "location": "southeastasia"
+}
