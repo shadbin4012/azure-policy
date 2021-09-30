@@ -1,0 +1,62 @@
+{
+ "sku": {
+  "name": "A0",
+  "tier": "Free"
+ },
+ "identity": {
+  "principalId": "fbd8a89c-970a-4292-aa48-9ca0496dd5c4",
+  "tenantId": "1eefffe2-b4f1-4c73-a75e-40f36f4e39be",
+  "type": "SystemAssigned"
+ },
+ "properties": {
+  "displayName": "Virtual machines should encrypt temp disks, caches, and data flows between Compute and Storage resources",
+  "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/0961003e-5a0a-4549-abde-af6a37f2724d",
+  "scope": "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/Knoxnetwork_group",
+  "notScopes": [
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/Knoxnetwork_group/providers/Microsoft.Compute/disks/kn",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/Knoxnetwork_group/providers/Microsoft.Compute/disks/Knoxnetwork_DataDisk_0",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/KNOXNETWORK_GROUP/providers/Microsoft.Compute/disks/Knoxnetwork_OsDisk_1_ee8a58996af341d486fa5da08c2fb1d1",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/KNOXNETWORK_GROUP/providers/Microsoft.Compute/disks/knoxWV20H2_OsDisk_1_785800ba719c4a98897206b8ca8d32c9",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/KNOXNETWORK_GROUP/providers/Microsoft.Compute/virtualMachines/Knoxnetwork",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/Knoxnetwork_group/providers/Microsoft.Compute/virtualMachines/knoxWV20H2",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/Knoxnetwork_group/providers/Microsoft.Compute/virtualMachines/Knoxnetwork/extensions/AzureNetworkWatcherExtension",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/Knoxnetwork_group/providers/Microsoft.Compute/virtualMachines/Knoxnetwork/extensions/enablevmaccess",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/KNOXNETWORK_GROUP/providers/Microsoft.Compute/virtualMachines/Knoxnetwork/extensions/LinuxAgent.AzureSecurityCenter",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/Knoxnetwork_group/providers/Microsoft.Compute/virtualMachines/Knoxnetwork/extensions/LinuxDiagnostic",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/KNOXNETWORK_GROUP/providers/Microsoft.Compute/virtualMachines/Knoxnetwork/extensions/MDE.Linux",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/KNOXNETWORK_GROUP/providers/Microsoft.Compute/virtualMachines/Knoxnetwork/extensions/OmsAgentForLinux",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/Knoxnetwork_group/providers/Microsoft.Compute/virtualMachines/Knoxnetwork/extensions/TeamServicesAgentExtension",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/Knoxnetwork_group/providers/Microsoft.Compute/virtualMachines/knoxWV20H2/extensions/AdminCenter",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/Knoxnetwork_group/providers/Microsoft.Compute/virtualMachines/knoxWV20H2/extensions/AzurePerformanceDiagnostics",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/Knoxnetwork_group/providers/Microsoft.Compute/virtualMachines/knoxWV20H2/extensions/DependencyAgentWindows",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/KNOXNETWORK_GROUP/providers/Microsoft.Compute/virtualMachines/knoxWV20H2/extensions/MDE.Windows",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/Knoxnetwork_group/providers/Microsoft.Compute/virtualMachines/knoxWV20H2/extensions/Microsoft.Powershell.DSC",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/Knoxnetwork_group/providers/Microsoft.Compute/virtualMachines/knoxWV20H2/extensions/MicrosoftMonitoringAgent",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/Knoxnetwork_group/providers/Microsoft.Compute/virtualMachines/knoxWV20H2/extensions/TeamServicesAgentExtension",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/Knoxnetwork_group/providers/Microsoft.Network/bastionHosts/Knoxnetwork_group-vnet-bastion",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/Knoxnetwork_group/providers/Microsoft.Network/networkInterfaces/knoxnetwork549",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/Knoxnetwork_group/providers/Microsoft.Network/networkInterfaces/knoxwv20h285",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/Knoxnetwork_group/providers/Microsoft.Network/networkSecurityGroups/Knoxnetwork-nsg",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/Knoxnetwork_group/providers/Microsoft.Network/networkSecurityGroups/knoxWV20H2-nsg",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/Knoxnetwork_group/providers/Microsoft.Network/publicIPAddresses/Knoxnetwork-ip",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/Knoxnetwork_group/providers/Microsoft.Network/publicIPAddresses/Knoxnetwork_group-vnet-ip",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/Knoxnetwork_group/providers/Microsoft.Network/publicIPAddresses/knoxWV20H2-ip",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/Knoxnetwork_group/providers/Microsoft.Network/virtualNetworks/Knoxnetwork_group-vnet",
+   "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/Knoxnetwork_group/providers/Microsoft.Storage/storageAccounts/knoxnetworkgroupdiag"
+  ],
+  "parameters": {},
+  "metadata": {
+   "assignedBy": "Shadbin Sabbir",
+   "parameterScopes": {},
+   "createdBy": "af5209f2-7825-4fcf-8111-f61dc693056b",
+   "createdOn": "2021-09-26T08:32:58.574014Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "enforcementMode": "Default"
+ },
+ "id": "/subscriptions/af6952e0-a7e5-4115-83a2-be8e0c445d5b/resourceGroups/Knoxnetwork_group/providers/Microsoft.Authorization/policyAssignments/2e36107f339e40d3b8925cb3",
+ "type": "Microsoft.Authorization/policyAssignments",
+ "name": "2e36107f339e40d3b8925cb3",
+ "location": "southeastasia"
+}
